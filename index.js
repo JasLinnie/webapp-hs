@@ -6,6 +6,10 @@ const request = require("request-promise-native");
 const cookieParser = require('cookie-parser');
 const cookies = require('browser-cookies');
 
+// set the port of our application
+// process.env.PORT lets the port be set by Heroku
+var port = process.env.PORT || 8080;
+
 app.set("view engine", "ejs");
 
 app.use(express.urlencoded({ extended: true }));
@@ -132,6 +136,6 @@ app.post('/deal/:name', async (req, res) => {
 
 
 
-app.listen(3000, () => {
-	console.log('This app is running on localhost:3000!')
+app.listen(port, () => {
+	console.log('This app is running on port' + port)
 });
