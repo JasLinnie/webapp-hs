@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web App Products page</title>
+  </head>
+  <body>
+    <h3>Products Page</h3>
+    <div>
+      <p>The products of The Gift Ship store!</p>
+    </div>
+    <div>
+      <ul>
+        <a href="/products/bag"><p>Item 1</p><img src="/static/images/bag.png"></a>
+        <a href="/products/lamp"><p>Item 2</p><img src="/static/images/lamp.png"></a>
+        <a href="/products/shoe"><p>Item 3</p><img src="/static/images/shoe.png"></a>
+        <a href="/products/specs"><p>Item 4</p><img src="/static/images/specs.png"></a>
+        <a href="/products/watch"><p>Item 5</p><img src="/static/images/watch.png"></a>
+      </ul>
+    </div>
+    <div>
+      <form action="/subscribe" method="post">
+        <label>Name:</label>
+        <input type="text" name="firstname">
+        <label>Email:</label>
+        <input type="text" name="email">
+        <input type="submit" value="Subscribe">
+      </form>
+    </div>
+    <%- include('includes/footer'); %>
+  </body>
+</html>

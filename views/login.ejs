@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web App Login page</title>
+    <script>
+      function track() {
+      var _hsq = window._hsq = window._hsq || [];
+      _hsq.push(["identify",{
+      email: document.getElementById("email").value,
+      firstname: document.getElementById("firstname").value
+      }]);
+      _hsq.push(['trackPageView']);
+      window.location.replace("/products");
+       }
+    </script>
+  </head>
+  <body>
+    <h3>Login</h3>
+    <div>
+      <p>Login to The Gift Ship store!</p>
+    </div>
+      <label>Name</label>
+      <input type="text" name="firstname" id="firstname">
+      <label>Email</label>
+      <input type="text" name="email" id="email">
+      <button type="button" onclick="track()">Login</button>
+
+    <%- include('includes/footer'); %>
+  </body>
+</html>
