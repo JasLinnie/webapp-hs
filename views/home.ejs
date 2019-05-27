@@ -2,13 +2,14 @@
 <html lang="en">
   <head>
     <title>Web App Home page</title>
+    <link href="/static/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h3>Home Page</h3>
-    <div>
-      <p>Hi this is the home page of The Gift Ship store!</p>
+    <%- include('includes/header'); %>
+    <div class="description">
+      <h3>Just some description that says this is the home page</h3>
     </div>
-    <div>
+    <div class="login">
       <a href="/login">Login here</a>
     </div>
     <%- include('includes/footer'); %>

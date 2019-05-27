@@ -2,18 +2,19 @@
 <html lang="en">
   <head>
     <title>Web App Individual page</title>
+    <link href="/static/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h3>Product <%- name %></h3>
-    <div>
-      <p>Product <%- name %> of The Gift Ship store!</p>
+    <%- include('includes/header'); %>   
+    <div class="login">
+      <h3>Product - <%- name %></h3>
     </div>
-    <div>
-        <p><%- name %></p>
-        <p>Description</p>
+    <div class="indivproduct">
+        <p>Some description of the <%- name %></p>
         <form action="/deal/<%- name %>" method="post">
           <input type="submit" value="Buy this!">
         </form>
+        <a href="/products">Back to products page</a>
     </div>
     <%- include('includes/footer'); %>
   </body>

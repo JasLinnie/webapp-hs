@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+}
+
+.header {
+    background-color: #cfd7f7;
+    padding: 5px;
+    text-align: center;
+}
+
+.description {
+	text-align: center;
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.login, .logintitle {
+	text-align: center;
+}
+
+.login a {
+	padding: 10px;
+    background-color: #35437c;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.login a:hover, .loginform button:hover {
+    background-color: #c9dde8;
+    color: #4f5e66;
+}
+
+.loginsection {
+	max-width: 300px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    border: 1px solid;
+    border-radius: 35px;
+}
+
+.logintitle h3 {
+	margin-top:0;
+}
+
+.loginform {
+	text-align:center;
+}
+
+.loginform input {
+    margin-bottom: 20px;
+}
+
+.loginform button {
+	background-color: #35437c;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.productlist {
+	max-width: 1500px;
+    margin: 50px auto;
+    display: flex;
+    text-align: center;
+}
+
+.productlist a {
+    width: 20%;
+    text-decoration: none;
+    color: #3d417c;
+    font-style: italic;
+    font-size: 1.2em;
+    font-weight: 700;
+    border: 0.5px solid black;
+    padding: 1px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.productlist a:nth-child(5) {
+	margin-right:0;
+}
+
+.productlist img {
+    width: 50%;
+}
+
+.subscribeform {
+	background-color: #74668e;
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+}
+
+.subscribeform input[type="text"] {
+    margin-right: 20px;
+}
+
+.subscribeform input[type="submit"] {
+	background-color: #dae6ef;
+    border: none;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.subscribeform input[type="submit"]:hover {
+    background-color: blanchedalmond;
+}
+
+.indivproduct {
+	text-align:center;
+}
+
+.indivproduct form input[type="submit"] {
+	border: none;
+    background-color: #8d5591;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

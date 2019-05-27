@@ -2,28 +2,27 @@
 <html lang="en">
   <head>
     <title>Web App Products page</title>
+    <link href="/static/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h3>Products Page</h3>
-    <div>
-      <p>The products of The Gift Ship store!</p>
+    <%- include('includes/header'); %>
+    <div class="login">
+      <h3>Products Page</h3>
     </div>
-    <div>
-      <ul>
-        <a href="/products/bag"><p>Item 1</p><img src="/static/images/bag.png"></a>
-        <a href="/products/lamp"><p>Item 2</p><img src="/static/images/lamp.png"></a>
-        <a href="/products/shoe"><p>Item 3</p><img src="/static/images/shoe.png"></a>
-        <a href="/products/specs"><p>Item 4</p><img src="/static/images/specs.png"></a>
-        <a href="/products/watch"><p>Item 5</p><img src="/static/images/watch.png"></a>
-      </ul>
+    <div class="productlist">
+      <a href="/products/bag"><img src="/static/images/bag.png"><p>Bag</p></a>
+      <a href="/products/lamp"><img src="/static/images/lamp.png"><p>Lamp</p></a>
+      <a href="/products/shoe"><img src="/static/images/shoe.png"><p>Shoe</p></a>
+      <a href="/products/specs"><img src="/static/images/specs.png"><p>Spectacles</p></a>
+      <a href="/products/watch"><img src="/static/images/watch.png"><p>Watch</p></a>
     </div>
-    <div>
+    <div class="subscribeform">
       <form action="/subscribe" method="post">
         <label>Name:</label>
         <input type="text" name="firstname">
         <label>Email:</label>
         <input type="text" name="email">
-        <input type="submit" value="Subscribe">
+        <input type="submit" value="Subscribe!">
       </form>
     </div>
     <%- include('includes/footer'); %>

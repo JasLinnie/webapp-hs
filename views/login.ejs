@@ -2,29 +2,41 @@
 <html lang="en">
   <head>
     <title>Web App Login page</title>
+    <link href="/static/styles.css" rel="stylesheet" type="text/css">
     <script>
       function track() {
+      var email = document.getElementById("email").value;
+      var firstname = document.getElementById("firstname").value;
+
+      if (email == "" || firstname == "") {
+        alert("Please fill in your details to login");
+      } else {
       var _hsq = window._hsq = window._hsq || [];
       _hsq.push(["identify",{
-      email: document.getElementById("email").value,
-      firstname: document.getElementById("firstname").value
+      email: email,
+      firstname: firstname
       }]);
       _hsq.push(['trackPageView']);
       window.location.replace("/products");
-       }
+       }}
     </script>
   </head>
   <body>
-    <h3>Login</h3>
-    <div>
-      <p>Login to The Gift Ship store!</p>
+    <%- include('includes/header'); %>
+    <div class="loginsection">
+      <div class="logintitle">
+        <h3>Login here to the store!</h3>
+      </div>
+      <div class="loginform">
+        <label>Name</label>
+        <input type="text" name="firstname" id="firstname" required>
+        <br>
+        <label>Email</label>
+        <input type="text" name="email" id="email" required>
+        <br>
+        <button type="button" onclick="track()">Login</button>
+      </div>
     </div>
-      <label>Name</label>
-      <input type="text" name="firstname" id="firstname">
-      <label>Email</label>
-      <input type="text" name="email" id="email">
-      <button type="button" onclick="track()">Login</button>
-
     <%- include('includes/footer'); %>
   </body>
 </html>
